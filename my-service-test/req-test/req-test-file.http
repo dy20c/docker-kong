@@ -1,0 +1,9 @@
+#kong-gw Admin
+GET http://localhost:8001/services
+Accept: application/json
+
+###
+
+#kong-test`
+GET http://localhost:8000/gists
+Accept: application/json
