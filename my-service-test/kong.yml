@@ -7,3 +7,9 @@ services:
       - name: gists-routes
         paths:
           - /gists
+#rate-limiting service. only possible config 5 minutes per 5 requests.
+plugins:
+  - name: rate-limiting
+    config:
+      minute: 5
+      policy: local
