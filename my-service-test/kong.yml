@@ -13,3 +13,10 @@ plugins:
     config:
       minute: 5
       policy: local
+#The Proxy Caching plugin provides this fast performance using a reverse proxy cache implementation. It caches response entities based on the request method, configurable response code, content type, and can cache per Consumer or per API.
+  - name: proxy-cache
+    config:
+      content_type:
+        - "application/json; charset=utf-8"
+      cache_ttl: 30
+      strategy: memory

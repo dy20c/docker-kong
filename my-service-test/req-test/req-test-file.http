@@ -4,6 +4,11 @@ Accept: application/json
 
 ###
 
-#kong-test`
+#kong-test
 GET http://localhost:8000/gists
 Accept: application/json
+
+###
+
+#To test more rapidly, the cache can be deleted by calling the Admin API:
+DELETE http://localhost:8001/proxy-cache
